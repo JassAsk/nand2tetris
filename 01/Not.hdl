@@ -1,0 +1,12 @@
+// File name: projects/01/Not.hdl
+ /**
+ * Not gate:
+ * out = ((in == 0), 1, 0)
+ */
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    Nand(a = in, b = in, out = out);
+}
